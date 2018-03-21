@@ -1,0 +1,102 @@
+<resources>
+    <!-- About App -->
+    <string name="app_name">EZNote</string>
+    <string name="app_name_caps">EASY NOTE</string>
+    <string name="app_description">Simple, easy, secure.</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- About Dev -->
+    <string name="dev_name">Agus Adhi Sumitro</string>
+    <string name="dev_email">aasumitro@gmail.com</string>
+    <string name="dev_site">https://asmith.my.id</string>
+
+    <!-- Play Store Link -->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+
+    <!-- Image -->
+    <string name="desc_image">Image</string>
+
+    <!-- Intro Slide -->
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <!-- Text -->
+    <string name="text_next">NEXT</string>
+    <string name="text_skip">SKIP</string>
+    <string name="text_start">GOT IT</string>
+    <string name="text_save">SAVE</string>
+    <string name="text_later">LATER</string>
+    <string name="text_insert">INSERT</string>
+    <string name="text_delete">DELETE</string>
+    <string name="text_cancel" >Cancel</string>
+    <string name="text_permanent">PERMANENT</string>
+    <string name="text_show_password">SHOW PASSWORD</string>
+    <string name="text_hide_password">HIDE PASSWORD</string>
+    <string name="text_set_password">Set password</string>
+    <string name="text_insert_link">Insert link</string>
+    <string name="text_title">Title</string>
+    <string name="text_false">false</string>
+    <string name="text_done">done</string>
+    <string name="text_updated">Updated</string>
+    <string name="text_clear">clear</string>
+    <string name="text_trash_title">Trash list</string>
+    <string name="text_category_list">Category list</string>
+    <string name="text_spinner_category">Spinner Category</string>
+    <string name="text_setting">Setting</string>
+    <string name="text_filter">filter</string>
+    <string name="text_date_created">Date created</string>
+    <string name="text_date_updated">Date updated</string>
+    <string name="text_trash">Trash</string>
+    <string name="text_category">Category</string>
+    <string name="text_new_note">New note</string>
+    <string name="text_about">About</string>
+    <string name="text_nothing">Nothing</string>
+    <string name="text_information">Information</string>
+    <string name="text_created_at">Created at : </string>
+    <string name="text_updated_at">Last updated at : </string>
+    <string name="text_lock_status">Lock status : </string>
+    <string name="text_confirm">Confirm</string>
+
+    <!-- Text Error/Success and Message -->
+    <string name="error_require">Required</string>
+    <string name="error_password_input">Required | Password must not have white space</string>
+    <string name="error_no_extra_key">Must pass EXTRA_POST_KEY</string>
+    <string name="success_password_created">Password created</string>
+    <string name="success_insert_link">Add link</string>
+    <string name="msg_no_change">No changes detected</string>
+    <string name="msg_no_cat_selected">No category selected</string>
+    <string name="msg_sure_question">Are you sure?</string>
+    <string name="msg_lost_change">You will lose your new changes!</string>
+    <string name="msg_lose_new_note">You will lose this new note!</string>
+    <string name="msg_delete_note">This action will delete this note!</string>
+    <string name="msg_moved_trash">has been moved to trash</string>
+    <string name="msg_delete_permanent">has been deleted permanently</string>
+    <string name="msg_insert_text">Insert text here&#8230;</string>
+    <string name="msg_action_clear">This action will permanently delete all item!</string>
+    <string name="msg_action_delete">This action will permanently delete these item!</string>
+
+    <!--New here-->
+    <string name="newer">just new</string>
+    <string name="text_create_category">Create category</string>
+    <string name="text_created">create</string>
+    <string name="text_help">help</string>
+    <string name="msg_cat_color">Tap to set color</string>
+    <string name="msg_delete_category">Delete this category?</string>
+    <string name="msg_delete_success">Deleted success</string>
+    <string name="text_restore">RESTORE</string>
+
+
+</resources>

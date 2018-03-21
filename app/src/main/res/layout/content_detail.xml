@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.aasumitro.easynote.ui.detail.DetailActivity"
+    tools:showIn="@layout/activity_detail"
+    android:background="@color/light_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:padding="@dimen/detail_title_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detail_layout_padding">
+
+                    <EditText
+                        android:id="@+id/etDetailTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/detail_ed_title_height"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/text_title"
+                        android:imeOptions="actionNext"
+                        android:fontFamily="serif"
+                        android:inputType="textCapSentences" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cardTitle"
+                android:layout_marginBottom="@dimen/detail_desc_card_margin_bot"
+                android:layout_marginTop="@dimen/detail_desc_card_margin_top">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detail_layout_padding">
+
+                    <jp.wasabeef.richeditor.RichEditor
+                        android:id="@+id/etDetailDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/actionDelete"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_delete_white_24dp"
+                android:visibility="gone"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionUnlock"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_lock_open_black_24dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionLock"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_lock_outline_black_24dp"
+                android:visibility="gone"
+                android:tint="@color/white"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/actionUndo"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_undo_black_24dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionRedo"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_redo_black_24dp"
+                android:tint="@color/white"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/actionBold"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_format_bold_black_24dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionItalic"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_format_italic_black_24dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionUnderline"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_format_underlined_black_24dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionStrikeThrough"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_strike_through_black_24dp"
+                android:tint="@color/white"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/actionAlignLeft"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_format_align_left_black_24dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionAlignCenter"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_format_align_center_black_24dp"
+                android:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/actionAlignRight"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_format_align_right_black_24dp"
+                android:tint="@color/white"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#fff"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/actionInsertLink"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_insert_link_black_24dp"
+                android:tint="@color/white"/>
+
+
+            <ImageButton
+                android:id="@+id/actionInfo"
+                android:layout_width="@dimen/detail_menu_button_width"
+                android:layout_height="@dimen/detail_menu_button_height"
+                android:background="@drawable/bottom_button_lis_state"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_info_outline_white_24dp"
+                android:visibility="gone"
+                android:tint="@color/white"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDetail"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLock"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
